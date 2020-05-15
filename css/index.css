@@ -97,7 +97,6 @@ body {
   font-family: 'Raleway', sans-serif;
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid gray;
 }
 h1 {
   font-size: 5rem;
@@ -120,7 +119,7 @@ img {
   height: auto;
 }
 header {
-  padding: 5% 0;
+  padding: 6% 0 0;
 }
 header nav {
   display: flex;
@@ -156,4 +155,40 @@ header nav .about {
   padding: 1% 3%;
   width: 20%;
   background-color: white;
+}
+.artists-container {
+  border-top: 1px solid gray;
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.artists-container div,
+.artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.artists-container div img,
+.artists-container .artist img {
+  padding: 1%;
+  max-width: auto;
+  height: 25vh;
+  border-radius: 5px;
+}
+.artists-container div a,
+.artists-container .artist a {
+  letter-spacing: 0;
+  font-size: 2rem;
+  padding: 3% 0;
+}
+.artists-container div div,
+.artists-container .artist div,
+.artists-container div .bio,
+.artists-container .artist .bio {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0 3%;
+  width: 98%;
 }
