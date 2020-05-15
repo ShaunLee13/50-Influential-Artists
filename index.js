@@ -306,14 +306,23 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(id, name, years, genre, nationality, bio){
+  
+  const newArtist = {
+    'id': id,
+    'name': name,
+    'years': years,
+    'genre': genre,
+    'nationality': nationality,
+    'bio': bio
+  } 
+  artists.push(newArtist);
 
-    /* Code here */
-
+  return(artists[20]);
   }
 
 
-
+console.log(addArtist(21, "Shaun Lee", '1993 - curent day', 'Web Design', 'American', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec quam mi.'));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
