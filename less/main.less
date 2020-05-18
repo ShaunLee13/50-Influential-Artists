@@ -1,0 +1,46 @@
+.artists-container{
+    border-top: 1px solid gray;
+    padding: 3% 0;
+    display:flex;
+    justify-content: space-evenly;
+
+
+    @media @mobile{
+        padding: 2% 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15%;
+    }   
+
+    div,
+    .artist{
+        .content-box();
+        width: 50%;
+
+
+        @media @mobile{
+            padding:3% 0;
+            width:75%;
+        }
+
+        img{
+            padding:1%;
+            max-width: auto;
+            height:25vh;
+            border-radius: 5px;
+        }
+
+        a{
+            letter-spacing: 0;
+            font-size: 2rem;
+            padding:3% 0;
+        }
+
+        div,
+        .bio{
+            .content-txt();
+            padding:0 3%;
+            width: 98%;
+        }
+    }
+}

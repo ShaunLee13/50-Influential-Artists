@@ -1,0 +1,53 @@
+header{
+    padding: 6% 0 0;
+
+    nav{
+        display: flex;
+        justify-content: center;
+
+        a{
+            padding: 0% 3%;
+            text-align: center;
+
+            @media @mobile{
+                font-size:1.75rem;
+            }
+        }
+
+        .home{
+            font-weight: 600;
+        }
+        .about{
+            border-left:2px solid black;
+            border-right: 2px solid black;
+        }
+    }
+}
+
+.title-container{
+    margin: 5%;
+    background-image: url(/assets/home.png);
+    height: 45vh;
+    background-size: 225%;
+    background-position: center;
+    .content-box();
+    justify-content: center;
+
+    @media @mobile{
+        margin:5% 0 3%;
+    }
+
+    h1{
+        padding-top:5%;
+        color: white;
+        text-align: center;
+    }
+
+    button{
+        .button(20%, white);
+
+        @media @mobile{
+            .button(28%, white);
+        }
+    }
+}

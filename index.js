@@ -210,7 +210,20 @@ const artists = [
 
 
 
+// console.log(artists[0].name);
+
+// console.log(artists[2].bio);
+
+
+
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+
+
+
+
+// artists[8].name = 'Vincent Van Gogh';
+
+// console.log(artists[8].name);
 
 
 
@@ -222,10 +235,19 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
-  }
+
+
+
+// function getArtistByIndex(id, name) {
+//     id = name[id].id;
+//     return `The artist at index ${id} is ${name[id].name}.`
+//   }
   
+
+//   console.log(getArtistByIndex(0, artists));
+
+
+
   /**
 
 
@@ -237,20 +259,42 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
+
+
+
+
+// function removeArtist(array, index) {
+//     array.splice(index, 1);
+//     return array;
+//   }
   
+
+// console.log(removeArtist(artists, 0));
+
+
+
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
 
-    /* Code here */
 
-  }
+// function lotsOfArt(array){
+//     manyArt = [];
+    
+//     for( let i = 0; i < array.length; i++){
+//       if (array[i].paintings > 100){
+//         manyArt.push(array[i].name);
+//       }
+//     }
+
+//     return manyArt;
+//   }
+
+
+//   console.log(lotsOfArt(artists));
+
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -262,14 +306,23 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(id, name, years, genre, nationality, bio){
+  
+  const newArtist = {
+    'id': id,
+    'name': name,
+    'years': years,
+    'genre': genre,
+    'nationality': nationality,
+    'bio': bio
+  } 
+  artists.push(newArtist);
 
-    /* Code here */
-
+  return(artists[20]);
   }
 
 
-
+console.log(addArtist(21, "Shaun Lee", '1993 - curent day', 'Web Design', 'American', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec quam mi.'));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
